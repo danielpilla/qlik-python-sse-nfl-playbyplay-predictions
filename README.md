@@ -14,7 +14,7 @@
 - *Note: this may be used with QlikView as of November 2017+.
     - *See how to setup Analytic Connections within QlikView [here](https://help.qlik.com/en-US/qlikview/November2017/Subsystems/Client/Content/Analytic_connections.htm)*
 - Python 3.5.3 64 bit
-- Python Libraries: grpcio, pandas, sckkit-learn==0.17, nflwin, preprocessing
+- Python Libraries: grpcio, pandas, scikit-learn==0.17, nflwin, preprocessing
 - *Including data originally taken from [ryurko/nflscrapR-data](https://github.com/ryurko/nflscrapR-data/tree/master/data) and then massaged to fit the NFLWin models*
 
 ## LAYOUT
