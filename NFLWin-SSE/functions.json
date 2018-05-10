@@ -1,0 +1,24 @@
+{
+    "Functions" : [
+        {
+            "Id" : 0,
+            "Name" : "PredictPlayByPlay",
+            "Type" : 2,
+            "ReturnType": 1,
+            "Params" : {
+            	"modelName" : 0,
+                "gameId" : 0,
+                "quarter" : 0,
+                "seconds_elapsed" : 0,
+				"offense_team" : 0,
+				"yardline" : 0,
+				"down" : 0,
+				"yards_to_go" : 0,
+				"home_team" : 0,
+				"away_team" : 0,
+				"curr_home_score" : 0,
+				"curr_away_score" : 0
+                }
+        }
+    ]
+}
