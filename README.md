@@ -74,6 +74,7 @@ $ workon QlikSenseAAI
 
 ```shell
 $ pip install grpcio
+$ python -m pip install grpcio-tools
 $ pip install pandas
 $ pip install scikit-learn==0.17
 $ pip install nflwin
