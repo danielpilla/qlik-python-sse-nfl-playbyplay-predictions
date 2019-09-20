@@ -1,14 +1,14 @@
 # NFL Play by Play Win Prediction SSE for Qlik
 
-![Sheet 1](https://s3.amazonaws.com/dpi-sse/dpi-python-sse-play-predictions-nfl/Dash1.png)
+![Sheet 1](../assets/Dash1.png)
 
-![Sheet 2](https://s3.amazonaws.com/dpi-sse/dpi-python-sse-play-predictions-nfl/Dash2.png)
+![Sheet 2](../assets/Dash2.png)
 
-![Sheet 3](https://s3.amazonaws.com/dpi-sse/dpi-python-sse-play-predictions-nfl/Dash3.png)
+![Sheet 3](../assets/Dash3.png)
 
 ## REQUIREMENTS
 
-- **Assuming prerequisite: [Python with Qlik Sense AAI – Environment Setup](https://s3.amazonaws.com/dpi-sse/DPI+-+Qlik+Sense+AAI+and+Python+Environment+Setup.pdf)**
+- **Assuming prerequisite: [Python with Qlik Sense AAI – Environment Setup](https://docs.google.com/viewer?url=https://github.com/danielpilla/qlik-python-sse-nfl-playbyplay-predictions/blob/assets/DPI%20-%20Qlik%20Sense%20AAI%20and%20Python%20Environment%20Setup.pdf?raw=true)**
     - This is not mandatory and is intended for those who are not as familiar with Python to setup a virtual environment. Feel free to follow the below instructions flexibly if you have experience.
 - Qlik Sense June 2017+
 - *Note: this may be used with QlikView as of November 2017+.
@@ -96,11 +96,11 @@ $ pip install preprocessing
 1. Now we want to setup our service and app. Let’s start by copying over the contents of the example
     from this package (from NFLWin-SSE) to the ‘..\QlikSenseAAI\NFL\’ location.
 2. Since NFLWin is built for Python 2.x and Qlik requires Python 3.4+, I've modified the sections of the NFLWin package's code needed to run this SSE so that it can run in 3.5+ (tested on 3.5.3). In the content, you will see a folder named NFLWin-ModifiedPackage. Navigate to your virtualenv location (or your Python location if not using virtualenv) and find the NFLWin package. If you've followed this guide using the virtualenv, the file path should resemble 'C:\\{YourUserName}\\Envs\\QlikSenseAAI\\Libs\\site-packages\\nflwin\\'. Replace all of the files in this directory with the files from NFLWin-ModifiedPackage.
-3. After copying over the contents, go ahead and import the example qvf found [here](https://s3.amazonaws.com/dpi-sse/dpi-python-sse-play-predictions-nfl/Football+-+AAI.qvf).
+3. After copying over the contents, go ahead and import the example qvf found [here](https://github.com/danielpilla/qlik-python-sse-nfl-playbyplay-predictions/releases).
 4. Lastly, download and import the extensions needed for the demo app:
     1.  [Sense-navigation](https://github.com/stefanwalther/sense-navigation) 
-    2.  [Black Background Theme](https://s3.amazonaws.com/dpi-sse/dpi-python-sse-play-predictions-nfl/BlackBackground.zip) *optional, requires Qlik Sense February 2018+*
-5. _Optionally, if you wanted to create your own models, I've included my script to do so in the NFLWin-CreateModels folder. Note that this needs to be executed in a Python 2.x environment (tested on 2.7) You can find the data to build the new models [here](https://s3.amazonaws.com/dpi-sse/dpi-python-sse-play-predictions-nfl/pbp_data_2009_2017_cleansed_noNA.csv)._
+    2.  [Black Background Theme](../assets/BlackBackground.zip) *optional, requires Qlik Sense February 2018+*
+5. _Optionally, if you wanted to create your own models, I've included my script to do so in the NFLWin-CreateModels folder. Note that this needs to be executed in a Python 2.x environment (tested on 2.7).
 
 
 ## PREPARE AND START SERVICES
@@ -161,4 +161,4 @@ Using NSSM is my personal favorite way to turn a Python SSE into a Windows Servi
 
 **Example:**
 
-![ServiceExample](https://s3.amazonaws.com/dpi-sse/PythonAsAService.png)
+![ServiceExample](../assets/PythonAsAService.png)
